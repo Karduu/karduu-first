@@ -1,0 +1,54 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPOgTU/8jdDCouFkc4uOmYh",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Karduu/karduu-first/blob/main/Python%20bank%20homework\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "-SNzVLNDV-kL"
+      },
+      "outputs": [],
+      "source": [
+        "print(\"Welcome to the Bank!\")\n",
+        "balance = 0\n",
+        "\n",
+        "while True:\n",
+        "    deposit = input(\"Please enter the amount of money(€) you want to deposit: \")\n",
+        "\n",
+        "    # add to the balance\n",
+        "    balance += int(deposit)\n",
+        "\n",
+        "    put_deposit = input(\"Do you want to make another deposit? Type 'yes' to continue or 'no' to exit: \")\n",
+        "\n",
+        "    if put_deposit.lower() != 'yes':\n",
+        "        print(f\"Thank you! Your total balance is: {balance}€\")\n",
+        "        break"
+      ]
+    }
+  ]
+}
