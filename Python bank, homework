@@ -1,0 +1,14 @@
+print("Welcome to the Bank!")
+balance = 0
+
+while True:
+    deposit = input("Please enter the amount of money(€) you want to deposit: ")
+
+    # add to the balance
+    balance += int(deposit)
+
+    put_deposit = input("Do you want to make another deposit? Type 'yes' to continue or 'no' to exit: ")
+
+    if put_deposit.lower() != 'yes':
+        print(f"Thank you! Your total balance is: {balance}€")
+        break
